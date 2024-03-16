@@ -1,0 +1,47 @@
+.area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--area-porta-largura);
+  height: var(--area-porta-altura);
+  margin: 5px;
+}
+
+.estrutura {
+  display: flex;
+  flex-grow: 1;
+  border-left: 5px solid brown;
+  border-top: 5px solid brown;
+  border-right: 5px solid brown;
+  width: 90%;
+}
+
+.porta {
+  background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.numero {
+  font-size: 3rem;
+}
+
+.macaneta {
+  position: absolute;
+  top: calc(0.45 * var(--area-porta-altura));
+  align-self: flex-start;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: brown;
+}
+
+.chao {
+  height: 10px;
+  width: 100%;
+  background-color: #ddd;
+}

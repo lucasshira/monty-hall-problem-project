@@ -32,3 +32,9 @@ a {
     color-scheme: dark;
   }
 }
+
+/* criando variaveis no CSS , sempre defino elas com dois tracos antes -- */
+:root {
+  --area-porta-altura: 310px;
+  --area-porta-largura: 200px;
+}

@@ -30,6 +30,10 @@ export default class PortaModel {
     return this.#aberta
   }
 
+  get fechada() {
+    return !this.#aberta
+  }
+
   // comportamentos para alterar o estado da porta e seguindo a IMUTABILIDADE
   desselecionar() {
     const selecionada = false

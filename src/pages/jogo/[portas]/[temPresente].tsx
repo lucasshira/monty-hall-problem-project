@@ -6,12 +6,13 @@ import { atualizarPortas, criarPortas } from "../../../../functions/portas";
 import { useRouter } from 'next/router';
 
 export default function jogo() {
+  // useRouter para obter acesso aos parametros de consulta da rota passados na URL
   const router = useRouter();
-  const [portas, setPortas] = useState([]);
+  const [portas, setPortas] = useState<PortaModel[]>([]);
 
   useEffect(() => {
-    const portas = +router.query.portas
-    const temPresente = +router.query.temPresente
+    const portas: number = +router.query.portas
+    const temPresente: number = +router.query.temPresente
     setPortas(criarPortas(portas, temPresente))
   }, [router?.query])
 

@@ -15,16 +15,16 @@ export default function Form() {
           <h1>Monty Hall</h1>
         </Cartao>
         <Cartao>
-          <EntradaNumerica text="Quantidade de Portas" value={qtdePortas} onChange={novaQtde => setQtdePortas(novaQtde)} />
+          <EntradaNumerica text="Number of doors" value={qtdePortas} onChange={novaQtde => setQtdePortas(novaQtde)} />
         </Cartao>
       </div>
       <div>
         <Cartao>
-          <EntradaNumerica text="Porta com Presente" value={comPresente} onChange={novaPortaComPresente => setComPresente(novaPortaComPresente)} />
+          <EntradaNumerica text="Door with gift" value={comPresente} onChange={novaPortaComPresente => setComPresente(novaPortaComPresente)} />
         </Cartao>
         <Link href={`/jogo/${qtdePortas}/${comPresente}`}>
           <Cartao bgcolor="#28a085">
-            <h2 className={styles.link}>Iniciar</h2>
+            <h1 className={styles.link}>Start</h1>
           </Cartao>
         </Link>
       </div>

@@ -1,16 +1,16 @@
 #jogo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-top: 10px;
 }
 
 .portas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-self: stretch;
+  justify-content: center;
+  align-self: center;
 }
 
 .botoes {
@@ -26,4 +26,5 @@
   border: none;
   padding: 10px 25px;
   cursor: pointer;
+  margin-bottom: 20px;
 }

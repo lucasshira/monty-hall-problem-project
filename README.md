@@ -1,4 +1,6 @@
-# Monty Hall Problem
+# Monty Hall Problem Project
+
+![Monty Hall](montyhall.PNG)
 
 This project is a Monty Hall game built using React and the Next.js framework. The Monty Hall problem is a probability puzzle based on a game show scenario. In this game, the player selects a set number of doors and designates which door contains the prize before the game begins, manually through input. As in the original game, the player is then given the option to stick with their initial choice or switch to another door after one of the unselected doors is revealed to not contain the prize.
 
